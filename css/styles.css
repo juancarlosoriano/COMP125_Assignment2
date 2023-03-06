@@ -1,0 +1,184 @@
+/*
+Author: Juan Carlo Soriano
+Student #: 301262744
+Assignment 2
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    background-color: #4c3c3c;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial , sans-serif;
+    letter-spacing: 0.5px;
+}
+
+ul, ol {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.container {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    background-color: #4c3c3c;
+    color: #f7f7f7;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+.content-container {
+    width: 100%;
+
+}
+
+main {
+    margin: 0 auto;
+    width: 950px;
+
+
+    /* padding: 20px 10px; */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding: 40px 0;
+}
+
+#img-box {
+    width: 100%;
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 40px;
+    min-height: 200px;
+    flex-wrap: wrap;
+}
+
+.img-box-item {
+    background-color: green;
+    width: 140px;
+    height: 100px;
+    margin: 20px 0 0;
+}
+
+.img-box-item-btn {
+    display: block;
+    width: 140px;
+}
+
+.list {
+    margin-left: 18px;
+}
+
+hr {
+    border: 0.5px solid #333;
+    margin: 50px 0;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-img {
+    width: 220px;
+    height: 180px;
+    background-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+footer {
+    width: 100%;
+    background-color: #4c3c3c;
+    color: #f7f7f7;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.9);
+    left: 0;
+    top: 0;
+}
+
+#btn-modal-close {
+    position: absolute;
+    right: 20%;
+    top: 15%;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+#modal-details {
+    position: relative;
+    top: 20%;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-img {
+    width: 300px;
+    height: 200px;
+}
+
+#btn-modal {
+    margin: 10px;
+}
+
+#modal-error-message {
+    color: red;
+}

@@ -1,0 +1,61 @@
+<!-- Author: Juan Carlo Soriano -->
+<!-- Student #: 301262744-->
+<!-- Assignment 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Slideshow</title>
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#">Home</a>
+            </div>
+        </nav>
+        <div class="content-container">
+            <main>
+                <h1>Interactive Slideshow</h1>
+
+                <div id="favourites">
+                    <h2>My Favourite Images</h2>
+                    <div id="img-box">
+                    </div>
+                </div>
+
+                <h3>To view your slides:</h3>
+                <ul class="list">
+                    <li>Click the right or left button to move forward or backward through the image list.</li>
+                    <li>Click the Play/Pause button to automatically move forward through the image list.</li>
+                    <li>Click an image to view it in full screen mode.</li>
+                </ul>
+
+                <hr />
+
+                <h3 class="gallery-title">My Western Vacation</h3>
+
+                <div id="gallery"></div>
+            </main>
+        </div>
+        <footer>
+            <p>Copyright. Juan Carlo Soriano - 301262744. March 2023.</p>
+        </footer>
+        <div id="modal" class="invisible">
+            <button id="btn-modal-close" type="button">X</button>
+            <div id="modal-details">
+                <img id="modal-img" src="" />
+                <p id="modal-error-message"></p>
+                <button id="btn-modal" type="button">Filler</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
